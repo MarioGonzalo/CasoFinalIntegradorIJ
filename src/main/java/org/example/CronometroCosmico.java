@@ -39,10 +39,8 @@ public class CronometroCosmico {
 
     @Override
     public String toString() {
-        return "CronometroCosmico{" +
-                "fechaTierra=" + fechaTierra +
-                "\n, fechaOtroPlaneta=" + fechaOtroPlaneta +
-                '}';
+        return "La fecha actual de la tierra es: " + fechaTierra +
+                "\n pero en el nuevo planeta es: " + fechaOtroPlaneta;
     }
 
 
