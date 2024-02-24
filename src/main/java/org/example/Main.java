@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -24,7 +25,13 @@ public class Main {
                     System.out.println(cc.toString());
                     break;
                 case 2:
-                    System.out.println("Recursos y suministros");
+                    ConsumoRecursos cr = new ConsumoRecursos();
+                    Random rand = new Random();
+                    cr.agregarConsumo(rand.nextInt(50));
+                    cr.agregarConsumo(rand.nextInt(50));
+                    cr.agregarConsumo(rand.nextInt(50));
+                    cr.agregarConsumo(rand.nextInt(50));
+                    System.out.println(cr.toString());
                     break;
                 case 3:
                     System.out.println("Sistema de alerta y monitoreo");
