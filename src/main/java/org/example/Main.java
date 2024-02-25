@@ -48,7 +48,15 @@ public class Main {
                     System.out.println(sa.toString());
                     break;
                 case 4:
-                    System.out.println("Planificador de tareas");
+                    PlanificadorTareas pt = new PlanificadorTareas(3, 3);
+                    Random rand3 = new Random();
+                    for (int i = 0; i < 3; i++) {
+                        for (int j = 0; j < 3; j++) {
+                            pt.asignarTarea(i, j, rand3.nextInt(1,10));
+                        }
+                    }
+                    pt.calcularCargaTrabajoOptima();
+                    System.out.println(pt.toString());
                     break;
                 case 5:
                     System.out.println("Navegador estelar");
