@@ -44,7 +44,7 @@ public class Main {
                     sa.monitorearTemperatura(rand2.nextInt(-20, 60));
                     sa.monitorearTemperatura(rand2.nextInt(-20, 60));
                     sa.monitorearPresion(rand2.nextInt(600, 1200));
-                    sa.monitorearPresion(rand2.nextInt(600, 1200));
+                    sa.monitorearPresion(rand2.nextInt(600, 1200) );
                     System.out.println(sa.toString());
                     break;
                 case 4:
