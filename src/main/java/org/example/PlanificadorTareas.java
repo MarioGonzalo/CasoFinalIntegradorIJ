@@ -3,8 +3,8 @@ package org.example;
 import java.util.Arrays;
 
 public class PlanificadorTareas {
-    private int[][] tareas; // Matriz de tareas: fila por miembro, columna por tarea
-    private int[] cargaTrabajoOptima; // Carga de trabajo óptima para cada miembro
+    public int[][] tareas; // Matriz de tareas: fila por miembro, columna por tarea
+    public int[] cargaTrabajoOptima; // Carga de trabajo óptima para cada miembro
 
     public PlanificadorTareas(int nMiembros, int nTareas) {
         this.tareas = new int[nMiembros][nTareas];

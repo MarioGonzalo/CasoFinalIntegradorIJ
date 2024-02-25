@@ -59,10 +59,14 @@ public class Main {
                     System.out.println(pt.toString());
                     break;
                 case 5:
-                    System.out.println("Navegador estelar");
+                    NavegadorEstelar ne = new NavegadorEstelar(5,5);
+                    ne.planificarConstruccion(1,1,1);
+                    ne.calcularRutaOptima();
+                    ne.visualizar();
                     break;
                 case 6:
-                    System.out.println("Sistema de comunicación interplanetario");
+                    ComunicadorInterplanetario ci = new ComunicadorInterplanetario();
+                    System.out.println(ci.toString());
                     break;
                 case 7:
                     seguir = false;
