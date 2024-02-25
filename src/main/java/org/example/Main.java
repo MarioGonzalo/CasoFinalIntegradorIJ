@@ -34,7 +34,18 @@ public class Main {
                     System.out.println(cr.toString());
                     break;
                 case 3:
-                    System.out.println("Sistema de alerta y monitoreo");
+                    SistemaAlerta sa = new SistemaAlerta();
+                    Random rand2 = new Random();
+                    sa.monitorearRadiacion(rand2.nextInt(50));
+                    sa.monitorearRadiacion(rand2.nextInt(50));
+                    sa.monitorearRadiacion(rand2.nextInt(50));
+                    sa.monitorearRadiacion(rand2.nextInt(50));
+                    sa.monitorearTemperatura(rand2.nextInt(-20, 60));
+                    sa.monitorearTemperatura(rand2.nextInt(-20, 60));
+                    sa.monitorearTemperatura(rand2.nextInt(-20, 60));
+                    sa.monitorearPresion(rand2.nextInt(600, 1200));
+                    sa.monitorearPresion(rand2.nextInt(600, 1200));
+                    System.out.println(sa.toString());
                     break;
                 case 4:
                     System.out.println("Planificador de tareas");
